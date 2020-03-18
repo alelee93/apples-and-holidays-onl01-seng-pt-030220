@@ -96,6 +96,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   holiday_hash.each do |season, event_hash|
+<<<<<<< HEAD
     #binding.pry
    
       puts "#{season.capitalize}:"
@@ -103,6 +104,12 @@ def all_supplies_in_holidays(holiday_hash)
         event_hash.each do |event, item|
           puts "  #{event.to_s.split("_").map{ |word| word.capitalize}.join(" ")}: #{item.join(", ")}"
         end
+=======
+    if season == :Winter || season == :Summer
+      puts season
+      puts event_hash
+    end
+>>>>>>> 718f994ec74a8eb3d09f2add448a3c3c8673bacf
   end
 end
 
